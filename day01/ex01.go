@@ -10,10 +10,10 @@ func ex01() int {
 	check(err)
 
 	var totals []int
-	elf := strings.Split(string(dat), "\n\n")
-	for i, _ := range elf {
-		cal := strings.Split(elf[i], "\n")
-		totals = append(totals, sum(cal))
+	elfs := strings.Split(string(dat), "\n\n")
+	for i, _ := range elfs {
+		cals := strings.Split(elfs[i], "\n")
+		totals = append(totals, sum(cals))
 	}
 	return getMax(totals)
 }
